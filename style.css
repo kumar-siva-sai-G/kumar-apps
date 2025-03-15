@@ -13,7 +13,7 @@
 .main {
    display: flex;
     flex-wrap:auto;
-    overflow-x: auto;
+    overflow-y: auto;
     width: 200%; 
 }
 h1{
