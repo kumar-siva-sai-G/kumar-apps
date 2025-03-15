@@ -12,12 +12,18 @@
 
 .main {
     display: flex;
-    flex-direction: column; 
-    overflow-y: auto;
-    overflow-y: auto;
-    width: 100%; 
+    flex-wrap: wrap; /* Allow items to wrap */
+    overflow-y: auto; /* Enable vertical scrolling */
+    width: 100%; /* Adjust width to fit the viewport */
 }
 
+.row {
+    display: flex;
+    flex-direction: row; /* Ensure items are in a row */
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure row takes full width */
+}
 
 h1 {
     font-size: 24px;
@@ -32,9 +38,28 @@ h1 {
     align-items: center;
     margin: 10px;
     background: transparent;
-    flex: 1; /* Ensure divs take equal space */
+    flex: 1 1 30%; /* Set basis to 30% to fit 3 items in a row */
+    max-width: 30%; /* Ensure max width is 30% */
 }
 
 .first1, .second1, .first2, .second2, .first3, .second3 {
     background: darkmagenta;
-    flex: 1;
+    flex: 1 1 30%; /* Set basis to 30% to fit 3 items in a row */
+    max-width: 30%; /* Ensure max width is 30% */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .first, .second {
+        flex: 1 1 45%; /* Adjust basis to fit 2 items in a row */
+        max-width: 45%; /* Ensure max width is 45% */
+    }
+
+    .main {
+        padding: 0 10px; /* Add padding to prevent cutting off */
+    }
+
+    .row {
+        justify-content: space-between; /* Ensure items are spaced out */
+    }
+}
