@@ -5,6 +5,7 @@
 }
 body {
     background-color: thistle;
+    overflow: hidden;
 }
 .main {
     display: flex;
@@ -24,7 +25,7 @@ h1 {
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    margin: 10px 0;/
+    margin: 10px 0;
 }
 .first1, .first2, .first3, .second1, .second2, .second3 {
     background-color: darkmagenta;
@@ -34,4 +35,5 @@ h1 {
     color: white;
     text-align: center; 
     border-radius: 5px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.5);
 }
