@@ -46,36 +46,35 @@ h1{
    
    background: transparent;
    background-color: darkmagenta;
-   flex :1;
+   
 }
 .second1
 {
     background: transparent;
     background-color: darkmagenta;
-    flex :1;
+    
 } 
 .first2
 {   
    
     background: transparent;
     background-color: darkmagenta;
-    flex :1;
+    
 }
 .second2
 {
     background: transparent;
     background-color: darkmagenta;
-    flex :1;
+    
 }
 .first3
 {    size: 50px;
     background: transparent;
     background-color: darkmagenta;
-     flex :1;
-}
+     
 .second3
 {
     background: transparent;
    background-color: darkmagenta;
-    flex :1;
+    
 }
