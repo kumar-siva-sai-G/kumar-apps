@@ -1,65 +1,77 @@
-.main1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main1
+{
+    display :flex;
+    justify-content:center;
+    align-items:center;
 }
-
-* {
-    margin: 20px;
-    padding: 20px;
+*
+{
+    margin:20px;
+    padding:20px;
     background-color: thistle;
 }
-
 .main {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap */
-    overflow-y: auto; /* Enable vertical scrolling */
-    width: 100%; /* Adjust width to fit the viewport */
+   display: flex;
+    flex-wrap:auto;
+    overflow-x: auto;
+    overflow-x: auto;
+    width: 200%; 
 }
-
-.row {
-    display: flex;
-    flex-direction: row; /* Ensure items are in a row */
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Ensure row takes full width */
-}
-
-h1 {
+h1{
     font-size: 24px;
-    color: rgb(255, 255, 255);
-    font-style: bold;
+    color:rgb(255, 255, 255);
+    font-style: Bold;
     background-color: rgb(184, 227, 25);
-}
 
-.first, .second {
-    display: flex;
+}
+.first
+{   
+   
+    display :flex;
     justify-content: center;
     align-items: center;
     margin: 10px;
     background: transparent;
-    flex: 1 1 30%; /* Set basis to 30% to fit 3 items in a row */
-    max-width: 30%; /* Ensure max width is 30% */
+   
 }
-
-.first1, .second1, .first2, .second2, .first3, .second3 {
-    background: darkmagenta;
-    flex: 1 1 30%; /* Set basis to 30% to fit 3 items in a row */
-    max-width: 30%; /* Ensure max width is 30% */
+.second
+{
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
 }
+.first1
+{  
+   
+   background: transparent;
+   background-color: darkmagenta;
 
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-    .first, .second {
-        flex: 1 1 45%; /* Adjust basis to fit 2 items in a row */
-        max-width: 45%; /* Ensure max width is 45% */
-    }
-
-    .main {
-        padding: 0 10px; /* Add padding to prevent cutting off */
-    }
-
-    .row {
-        justify-content: space-between; /* Ensure items are spaced out */
-    }
+}
+.second1
+{
+    background: transparent;
+    background-color: darkmagenta;
+} 
+.first2
+{   
+   
+    background: transparent;
+    background-color: darkmagenta;
+   
+}
+.second2
+{
+    background: transparent;
+    background-color: darkmagenta;
+}
+.first3
+{    size: 50px;
+    background: transparent;
+    background-color: darkmagenta;
+}
+.second3
+{
+    background: transparent;
+   background-color: darkmagenta;
 }
