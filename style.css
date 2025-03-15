@@ -1,77 +1,54 @@
-.main1
-{
-    display :flex;
-    justify-content:center;
-    align-items:center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-*
-{
-    margin:20px;
-    padding:20px;
+body {
     background-color: thistle;
 }
 .main {
-   display: flex;
-    flex-wrap:auto;
-    overflow-x: auto;
-    overflow-x: auto;
-    width: 200%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-h1{
+h1 {
     font-size: 24px;
-    color:rgb(255, 255, 255);
-    font-style: Bold;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
     background-color: rgb(184, 227, 25);
-
+    text-align: center;
+    padding: 10px;
 }
-.first
-{   
-   
-    display :flex;
+.first, .second, .third {
+    display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px;
-    background: transparent;
-   
+    width: 100%;
 }
-.second
-{
-    display :flex;
-    justify-content: center;
+.first1, .first2, .second1, .second2, .third1, .third2 {
+    background-color: darkmagenta;
+    margin: 10px;
+    flex: 1 1 calc(50% - 20px); /* 50% width minus margin */
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    background: transparent;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
 }
-.first1
-{  
-   
-   background: transparent;
-   background-color: darkmagenta;
-
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
-.second1
-{
-    background: transparent;
-    background-color: darkmagenta;
-} 
-.first2
-{   
-   
-    background: transparent;
-    background-color: darkmagenta;
-   
+p {
+    text-align: center;
+    margin-top: 10px;
 }
-.second2
-{
-    background: transparent;
-    background-color: darkmagenta;
-}
-.first3
-{    size: 50px;
-    background: transparent;
-    background-color: darkmagenta;
-}
-.second3
-{
-    background: transparent;
-   background-color: darkmagenta;
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .first1, .first2, .second1, .second2, .third1, .third2 {
+        flex: 1 1 100%; /* Full width on small screens */
+    }
 }
