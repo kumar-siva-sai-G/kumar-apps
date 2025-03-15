@@ -1,75 +1,47 @@
-.main1
-{
-    display :flex;
-    justify-content:center;
-    align-items:center;
+.main1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-*
-{
-    margin:20px;
-    padding:20px;
+
+* {
+    margin: 20px;
+    padding: 20px;
     background-color: thistle;
 }
-.main {
-   display: flex;
-    overflow-x: auto;
-    width: 200%; 
-}
-h1{
-    font-size: 24px;
-    color:rgb(255, 255, 255);
-    font-style: Bold;
-    background-color: rgb(184, 227, 25);
 
+.main {
+    display: flex;
+    flex-direction: column; /* Change to column for vertical scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    width: 100%; /* Adjust width to fit the viewport */
 }
-.first
-{   
-   
-    display :flex;
+
+.row {
+    display: flex;
+    flex-direction: row; /* Ensure two divs in a row */
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure row takes full width */
+}
+
+h1 {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-style: bold;
+    background-color: rgb(184, 227, 25);
+}
+
+.first, .second {
+    display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px;
     background: transparent;
-   
+    flex: 1; /* Ensure divs take equal space */
 }
-.second
-{
-    display :flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-}
-.first1
-{  
-   
-   background: transparent;
-   background-color: darkmagenta;
 
-}
-.second1
-{
-    background: transparent;
-    background-color: darkmagenta;
-} 
-.first2
-{   
-   
-    background: transparent;
-    background-color: darkmagenta;
-   
-}
-.second2
-{
-    background: transparent;
-    background-color: darkmagenta;
-}
-.first3
-{    size: 50px;
-    background: transparent;
-    background-color: darkmagenta;
-}
-.second3
-{
-    background: transparent;
-   background-color: darkmagenta;
+.first1, .second1, .first2, .second2, .first3, .second3 {
+    background: darkmagenta;
+    flex: 1; /* Ensure divs take equal space */
 }
