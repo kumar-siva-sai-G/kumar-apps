@@ -1,70 +1,43 @@
-.main1 
-{ 
-    display :flex; 
-    justify-content:center; 
-    align-items:center; 
-} 
-* 
-{ 
-    margin:20px; 
-    padding:20px; 
-    background-color: thistle; 
-} 
-.main { 
-   display: flex; 
-    flex-wrap:auto; 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: thistle;
+    overflow: hidden; 
+}
+.main {
+    display: flex;
+    flex-direction: column; 
+    width: 100%; 
+    height: 100vh; 
     overflow-x: auto; 
-    overflow-x: auto; 
-    width: 200%;  
-} 
-h1{ 
-    font-size: 24px; 
-    color:rgb(255, 255, 255); 
-    font-style: Bold; 
-    background-color: rgb(184, 227, 25); 
-} 
-.first 
-{    
-    display :flex; 
+    overflow-y:auto;
+    overflow:auto;
+}
+h1 {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: rgb(184, 227, 25);
+    text-align: center;
+    padding: 10px;
+}
+.first, .second {
+    display: flex; 
     justify-content: center; 
     align-items: center; 
+    margin: 10px 0;
+}
+.first1, .first2, .first3, .second1, .second2, .second3 {
+    background-color: darkmagenta;
     margin: 10px; 
-    background: transparent; 
-} 
-.second 
-{ 
-    display :flex; 
-    justify-content: center; 
-    align-items: center; 
-    background: transparent; 
-} 
-.first1 
-{   
-   background: transparent; 
-   background-color: darkmagenta; 
-} 
-.second1 
-{ 
-    background: transparent; 
-    background-color: darkmagenta; 
-}  
-.first2 
-{    
-    background: transparent; 
-    background-color: darkmagenta; 
-} 
-.second2 
-{ 
-    background: transparent; 
-    background-color: darkmagenta; 
-} 
-.first3 
-{    size: 50px; 
-    background: transparent; 
-    background-color: darkmagenta; 
-} 
-.second3 
-{ 
-    background: transparent; 
-   background-color: darkmagenta; 
-} 
+    flex: 1; 
+    padding: 20px;
+    color: white;
+    text-align: center; 
+    border-radius: 5px;
+    min-width: 150px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
