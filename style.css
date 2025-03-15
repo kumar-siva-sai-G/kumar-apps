@@ -12,18 +12,11 @@
 
 .main {
     display: flex;
-    flex-direction: column; /* Change to column for vertical scrolling */
-    overflow-y: auto; /* Enable vertical scrolling */
-    width: 100%; /* Adjust width to fit the viewport */
+    flex-direction: column; 
+    overflow-y: auto;
+    width: 100%; 
 }
 
-.row {
-    display: flex;
-    flex-direction: row; /* Ensure two divs in a row */
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Ensure row takes full width */
-}
 
 h1 {
     font-size: 24px;
@@ -43,5 +36,4 @@ h1 {
 
 .first1, .second1, .first2, .second2, .first3, .second3 {
     background: darkmagenta;
-    flex: 1; /* Ensure divs take equal space */
-}
+    flex: 1;
