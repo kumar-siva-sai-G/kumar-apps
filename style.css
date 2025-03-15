@@ -1,0 +1,70 @@
+.main1
+{
+    display :flex;
+    justify-content:center;
+    align-items:center;
+}
+*
+{
+    margin:20px;
+    padding:20px;
+    background-color: thistle;
+}
+h1{
+    font-size: 24px;
+    color:rgb(255, 255, 255);
+    font-style: Bold;
+    background-color: rgb(184, 227, 25);
+
+}
+.first
+{   
+   
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background: transparent;
+   
+}
+.second
+{
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+.first1
+{  
+   
+   background: transparent;
+   background-color: darkmagenta;
+
+}
+.second1
+{
+    background: transparent;
+    background-color: darkmagenta;
+} 
+.first2
+{   
+   
+    background: transparent;
+    background-color: darkmagenta;
+   
+}
+.second2
+{
+    background: transparent;
+    background-color: darkmagenta;
+}
+.first3
+{    size: 50px;
+    background: transparent;
+    background-color: darkmagenta;
+}
+.second3
+{
+    background: transparent;
+   background-color: darkmagenta;
+}
