@@ -1,80 +1,36 @@
-.main1
-{
-    display :flex;
-    justify-content:center;
-    align-items:center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-*
-{
-    margin:20px;
-    padding:20px;
+body {
     background-color: thistle;
 }
 .main {
-   display: flex;
-    flex-wrap:auto;
-    overflow-y: auto;
-    width: 200%; 
+    display: flex;
+    flex-direction: column; 
+    width: 100%; 
 }
-h1{
+h1 {
     font-size: 24px;
-    color:rgb(255, 255, 255);
-    font-style: Bold;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
     background-color: rgb(184, 227, 25);
-
+    text-align: center;
+    padding: 10px;
 }
-.first
-{   
-   
-    display :flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    background: transparent;
-    flex :1;
+.first, .second {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 10px 0;/
 }
-.second
-{
-    display :flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-    flex :1;
-}
-.first1
-{  
-   
-   background: transparent;
-   background-color: darkmagenta;
-   
-}
-.second1
-{
-    background: transparent;
+.first1, .first2, .first3, .second1, .second2, .second3 {
     background-color: darkmagenta;
-    
-} 
-.first2
-{   
-   
-    background: transparent;
-    background-color: darkmagenta;
-    
-}
-.second2
-{
-    background: transparent;
-    background-color: darkmagenta;
-    
-}
-.first3
-{    size: 50px;
-    background: transparent;
-    background-color: darkmagenta;
-     
-.second3
-{
-    background: transparent;
-   background-color: darkmagenta;
-    
+    margin: 10px; 
+    flex: 1; 
+    padding: 20px;
+    color: white;
+    text-align: center; 
+    border-radius: 5px;
 }
